@@ -1,0 +1,8 @@
+.dark-mode #LinkList3,.dark-mode .kotak-pinned,.dark-mode .sidebar .widget h3{background:#15202b;color:white}
+.dark-mode #LinkList3:before,.dark-mode #LinkList3:after{color:white}
+.dark-mode #LinkList3 h2{color:white;border-bottom:2px solid #f1f1f1}
+.dark-mode .isihalaman-kiri,.dark-mode .isihalaman-kanan,.dark-mode a.blog-pager-newer-link,.dark-mode a.blog-pager-older-link,.dark-mode span.prev-post{color:white!Important;background:#15202b}
+.dark-mode #menu,#menu .menu li a{background:#15202b;color:white}
+.dark-mode .aktif{border:none}
+.dark-mode #sitemap5 a,#sitemap5 .isi ol li:nth-child(odd){color:white!important;background:none}
+.dark-mode .kategorilist li{color:white}
