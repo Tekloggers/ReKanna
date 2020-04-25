@@ -1,0 +1,26 @@
+Laporan Bug Teks yang berantakan:
+Ini mungkin terjadi untuk yang versi standard aja versi grid kalau gak salah, tapi gak ada salahnya untuk mencoba.Btw, ini sebenernya cuma
+karena CSS yang kurang :
+
+Masuk Tema> Edit Html > CTRL+F > #kolor a.title-article 
+Note pastikan kalian menemukan kode yang seperti ini : 
+#kolor a.title-article{overflow:hidden;font-size:13px;position:relative;width:100%;text-align:center;justify-content:center;display:flex;margin-top:10px;font-weight:700;color:black}
+
+Hapus dan ganti ke yang ini:
+#kolor a.title-article{overflow:hidden;font-size:13px;position:relative;width:160px;max-height:40px;text-align:center;justify-content:center;display:flex;margin-top:10px;font-weight:700;color:black}
+
+----------------------------------------------------------------
+Dokumentasi Tambahan untuk pengaturan Recent Post by label dan Featured Slider:
+ Masuk Tema> Edit Html > CTRL+F > // Options
+nanti diatasny ada kode option ada  yang kek gini: 
+nah ubah bagian 7 untuk ngatur jumlah postnya,
+postnum1=1,postnum4=7,postnum5=7;
+
+scroll kebawah lagi bakalan ada 
+kode autoplay:true kalau 
+mau dinonaktifin auto slider yang featured post
+ubah jadi false
+
+Note: Re:Kanna Ver.5 tidak ada dokumentasi dan demo jadi kalau ada hal yang ditanyakan mohon bergabung di discord karena disana sudah
+ada deskripsi singakt untuk versi terbarunya : 
+Link Discord : https://discord.gg/xCJwAqZ
