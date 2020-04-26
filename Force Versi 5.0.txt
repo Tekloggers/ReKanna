@@ -9,6 +9,38 @@ Note pastikan kalian menemukan kode yang seperti ini :
 Hapus dan ganti ke yang ini:
 #kolor a.title-article{overflow:hidden;font-size:13px;position:relative;width:160px;max-height:40px;text-align:center;justify-content:center;display:flex;margin-top:10px;font-weight:700;color:black}
 
+---------------Bug Update (26/04/2020)
+Mengatasi Message yang Tertutup Navigasi Di Halaman Mobile:
+Masuk Tema> Edit Html > CTRL+F > .status-msg-wrap
+Note pastikan kalian menemukan kode yang seperti ini : 
+.status-msg-wrap{background:#ddd;border:1px solid #34495e;font-weight:700;padding:10px;text-align:center;color:black;margin:7px 0;}
+hapus semua kode yang diatas dan ganti ke ini:
+.status-msg-wrap{background:#ddd;border:1px solid #34495e;font-weight:700;padding:10px;text-align:center;color:black;margin:7px 0;margin-bottom:35px}
+
+---Mengatasi Message pada Laman Label yang tertutup Gambar:
+Mengatasi NewsTicker yang Tertutup Navigasi Di Halaman Mobile:
+Masuk Tema> Edit Html > CTRL+F > /head 
+Masukan kode berikut tepat diatas elemen /head nya:
+<b:if cond='!data:view.isHomepage'>
+<b:if cond='!data:view.isPost'>
+<style>
+@media screen and (max-width:640px){
+#-batazx {
+    margin-bottom: 10px;
+    margin-top: 57px;
+}}
+</style>
+</b:if></b:if>
+
+---Mengatasi Judul Untuk Featured Slide yang melewati batas hitam
+Masuk Tema> Edit Html > CTRL+F > /head 
+Masukan kode berikut tepat diatas elemen /head nya:
+<b:if cond='data:blog.isMobileRequest == &quot;false&quot;'>
+<style>
+.slider-wrapp .post-inner {max-width: 475px;}
+</style>
+</b:if>
+
 ----------------------------------------------------------------
 Dokumentasi Tambahan untuk pengaturan Recent Post by label dan Featured Slider:
  Masuk Tema> Edit Html > CTRL+F > // Options
