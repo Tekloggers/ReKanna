@@ -41,6 +41,39 @@ Masukan kode berikut tepat diatas elemen /head nya:
 </style>
 </b:if>
 
+-Update 26/04/2020 :
+Perbaikan Widget Post yang terlelu mendepet satu sama lain dilaman dekstop:
+Masuk Tema> Edit Html > ctrl+f article.post.hentry{margin-bottom:15px!important
+note ganti yang bagian 15px jadi 41px .Setelah itu Klik Simpan
+
+Request : Episode List versi lama:
+Masuk Tema > Edit Html > CTRL+F > /*Kategori List*/
+Taroh Kode ini tepat diatasnya :
+/*Episode List*/
+.episodelist{padding:0;width:95%;margin:0 auto 21px auto;box-shadow:0 1px 16px 2px rgba(0,0,0,0.2)}
+.episodelist ol::-webkit-scrollbar{width:5px;height:1px;background:#ececec}
+.episodelist ol::-webkit-scrollbar-thumb{background:$(main.color);}
+.episodelist h2{background:$(eps.color)!important;color:white!important}
+.episodelist ol{max-height:400px;overflow-y:auto;padding:5px}
+.episodelist li{text-overflow:ellipsis;line-height:30px;box-shadow:0 -3px 5px -5px rgba(0,0,0,0.14),0px 2px 2px 0 rgba(0,0,0,0.12),0px 2px 4px -5px rgba(0,0,0,0.2);list-style:none;padding:3px 6px;margin:3px 2px;font-weight:700;border-radius:4px;background:#ffffff;border-right:2px solid #fff;font-size:14px}
+.episodelist li:before{content:'\f138';font-family:fontawesome;margin-right:5px;color:#607D8B;font-size:14.5px}
+.episodelist li:after{content:'Download Now';float:right;background:$(main.color);border-radius:4px;color:white;font-weight:700;font-size:12px;padding:0 8px}
+.episodelist li a{text-decoration:none;border:none;color:black;font-size:14px;font-weight:700;cursor:pointer}
+.episodelist{padding:0;width:95%;margin:0 auto 21px auto;box-shadow:0 1px 16px 2px rgba(0,0,0,0.2)}
+.episodelist ol::-webkit-scrollbar{width:5px;height:1px;background:#ececec}
+.episodelist ol::-webkit-scrollbar-thumb{background:#ffc03f;}
+.episodelist h2{background:#71cbcb!important;color:white!important}
+.episodelist ol{max-height:400px;overflow-y:auto;padding:5px}
+.episodelist li{text-overflow:ellipsis;line-height:30px;box-shadow:0 -3px 5px -5px rgba(0,0,0,0.14),0px 2px 2px 0 rgba(0,0,0,0.12),0px 2px 4px -5px rgba(0,0,0,0.2);list-style:none;padding:3px 6px;margin:3px 2px;font-weight:700;border-radius:4px;background:#ffffff;border-right:2px solid #fff;font-size:14px}
+.episodelist li:before{content:'\f138';font-family:fontawesome;margin-right:5px;color:#607D8B;font-size:14.5px}
+.episodelist li:after{content:'Download Now';float:right;background:#ffc03f;border-radius:4px;color:white;font-weight:700;font-size:12px;padding:0 8px}
+.episodelist li a{text-decoration:none;border:none;color:black;font-size:14px;font-weight:700;cursor:pointer}
+
+Request Pengaturan Resolusi Gambar :
+Masuk tema> cari Tag Img pastikan berada dalam bungkus post bukan tag script > dan ganti kode yang ada seperti ini expr:src='data:post.firstImageUrl' menjadi  expr:src='resizeImage(data:post.firstImageUrl, 720)' ubah 720 ke resolusi gambar yang kalian mau.Nantinya akan banyak tag img tapi pastikan salah satunya ada elemen expr:src='data:post.firstImageUrl'
+contoh pada halaman post CTRL +F <div class='coverImage'>
+Selanjutnya lakukan seperti cara diatas
+
 ----------------------------------------------------------------
 Dokumentasi Tambahan untuk pengaturan Recent Post by label dan Featured Slider:
  Masuk Tema> Edit Html > CTRL+F > // Options
