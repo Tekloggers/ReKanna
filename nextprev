@@ -1,0 +1,19 @@
+   <b:includable id='nextprev'>      
+ 	 <div class='blog-pager' id='blog-pager'>
+       <b:if cond='data:newerPageUrl'>
+         <span id='page-newer'> 
+           <a class='page-newer' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-newer-link&quot;' expr:title='data:newerPageTitle'>&#171; Newer Post</a> </span> 
+       </b:if>
+       <b:if cond='data:olderPageUrl'>
+         <span id='page-older'> 
+           <a class='page-older' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &quot;_blog-pager-older-link&quot;' expr:title='data:olderPageTitle'> Older Post &#187;</a> </span>
+       </b:if> 
+       <a class='home-link' expr:href='data:blog.homepageUrl'><data:homeMsg/></a> 
+       <b:if cond='data:mobileLinkUrl'> 
+         <div class='blog-mobile-link'> 
+           <a expr:href='data:mobileLinkUrl'><data:mobileLinkMsg/></a> 
+         </div> 
+       </b:if>       
+       <div class='clear'/>
+      </div>
+	</b:includable>
