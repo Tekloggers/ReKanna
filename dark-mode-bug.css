@@ -1,5 +1,6 @@
 .dark-mode ul.list-post li a{color:white}
 .dark-mode h1.entry-title{color:white}
+
 .dark-mode #LinkList3,.dark-mode .kotak-pinned,.dark-mode .sidebar .widget h3{background:#15202b;color:white}
 .dark-mode #LinkList3:before,.dark-mode #LinkList3:after{color:white}
 .dark-mode #LinkList3 h2{color:white;border-bottom:2px solid #f1f1f1}
